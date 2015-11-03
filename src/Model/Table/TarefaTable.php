@@ -45,11 +45,23 @@ class TarefaTable extends Table
             
         $validator
             ->requirePresence('titulo', 'create')
-            ->notEmpty('titulo');
+            ->notEmpty('titulo', 'Error: Titulo obrigatório!')
+            ->add('titulo', [
+                'length' => [
+                    'rule' => ['minLength', 10],
+                    'message' => 'Error titulo: Minimo de caracteres 10!',
+                ]
+            ]);
             
         $validator
             ->requirePresence('descricao', 'create')
-            ->notEmpty('descricao');
+            ->notEmpty('descricao', 'Error: Descrição obrigatório!')
+            ->add('descricao', [
+                'length' => [
+                    'rule' => ['minLength', 20],
+                    'message' => 'Error descrição: Minimo de caracteres 10!',
+                ]
+            ]);
         return $validator;
     }
 

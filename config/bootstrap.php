@@ -203,3 +203,5 @@ Type::build('datetime')->useLocaleParser();
 
 
 date_default_timezone_set('UTC');
+
+ini_set('intl.default_locale', 'pt_BR');

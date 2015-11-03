@@ -1,28 +1,23 @@
-
   <div class="row">    
-    <?=$this->Form->create('projeto', ['type'=>'file']);?>
+    <?=$this->Form->create($notificar, ['type'=>'file']);?>
     <input type="hidden" value="<?=$projeto?>" name="projeto"/>
     <div class="col-md-6">
       <div class="form-group">
-        <label for="assunto">Assunto:</label>
-        <input type="text" class="form-control" id="assunto" name="assunto" size="40">
+        <?=$this->Form->input('assunto', ['class'=>'form-control', 'required'=>'']);?>
       </div>
     </div>
   </div>
   <div  class="row">
     <div class="col-md-6">
       <div class="form-group">
-      <label for="texto">Texto:</label>
-        <textarea rows="4" cols="60" class="form-control" name="texto" id="texto">
-        </textarea>
+        <?=$this->Form->input('texto', ['class'=>'form-control', 'required'=>'']);?>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <label for="anexo">Anexo</label>
-        <input type="file" name="anexo" class="form-control" id="anexo">
+        <?=$this->Form->input('anexo', ["class"=>"form-control","id"=>"anexo", 'type'=>'file'])?>                
       </div>    
     </div>
   </div>
@@ -31,5 +26,4 @@
       <button type="submit" class="btn btn-default" name="btn-enviar">Enviar email</button>
     </div>
   </div>
-  
 <?=$this->Form->end();?>

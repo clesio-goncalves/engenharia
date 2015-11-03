@@ -12,7 +12,7 @@
           <div class="form-group">
             <label>Observacao</label>
             <label class="form-control" rows="3" name="descricao" readonly='true'>
-                <?=$acao->Observacao?>
+                <?=$acao->observacao?>
             </label>
           </div>     
         

@@ -54,10 +54,11 @@ class UsuarioController extends AppController
                     return $this->redirect(['prefix'=>'admin', 'controller'=>'projeto']);
                 }else{
                     return $this->redirect(['prefix'=>false, 'controller'=>'projeto']);
-                }
-                
+                }                
             }
-            $this->Flash->error(__('Invalid username or password, try again'));
+            $this->Flash->error(__('Invalid username or password, try again'), [
+                'key' => 'auth',                
+            ]);
         }
     }
 

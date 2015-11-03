@@ -46,34 +46,40 @@ class UsuarioTable extends Table
             
         $validator
             ->requirePresence('nome', 'create')
-            ->notEmpty('nome', 'Campo obrigatório!');
+            ->notEmpty('nome', 'Error: Nome obrigatório!')
+            ->add('nome', [
+                'length' => [
+                    'rule' => ['minLength', 10],
+                    'message' => 'Error nome: Minimo de caracteres 10!',
+                ]
+            ]);
             
         $validator
-            ->add('email', 'valid', ['rule' => 'email', 'message'=>'Email invalido!'])  
+            ->add('email', 'valid', ['rule' => 'email', 'message'=>'Error: E-mail invalido!'])  
             ->requirePresence('email', 'create')
-            ->notEmpty('email', 'Campo obrigatório!');
+            ->notEmpty('email', 'Error: E-mail obrigatório!');
 
         $validator->add('email', [
             'unique' => [
                 'rule' => 'validateUnique', 
                 'provider' => 'table',
-                'message'=>'Email ja cadastrado!'
+                'message'=>'Error: E-mail já cadastrado!'
 
             ]
         ]);
 
         $validator
             ->requirePresence('senha', 'create')
-            ->notEmpty('senha', 'Campo obrigatório!')
+            ->notEmpty('senha', 'Error: Senha obrigatória!')
             ->add('senha', [
                 'minLength' => [
                     'rule' => ['minLength', 8],
                     'last' => true,
-                    'message' => 'Minimo de 8 caracteres.'
+                    'message' => 'Error senha: Minimo de 8 caracteres.'
                 ],
                 'maxLength' => [
                     'rule' => ['maxLength', 12],
-                    'message' => 'Maximo de 12 caracteres.'
+                    'message' => 'Error senha: Maximo de 12 caracteres.'
                 ]
             ]);
         $extra = 'tss';
@@ -81,7 +87,7 @@ class UsuarioTable extends Table
             'rule' => function ($value, $context) use ($extra) {
                 return $context['data']['senha']==$context['data']['confSenha'];                
             },
-            'message'=>'Senhas não coincidem!',
+            'message'=>'Error: Senhas não coincidem!',
         ]);        
 
         return $validator;

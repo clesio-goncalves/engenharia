@@ -1,30 +1,17 @@
+
     <div class="col-md-6">
-        <?= $this->Form->create($usuario); ?>
-        <?php 
-            $erros = $usuario->errors();
-            if(count($erros)>0){
-                echo "<div>";
-                    foreach ($erros as $campo => $erro) {
-                        echo "Error! ".$campo.' - '.current($erro)."<br />";
-                    }
-                echo '</div>';
-            }
-        ?>
-          <div class="form-group">
-            <label for="idNome">Nome</label>
-            <input type="text" class="form-control" id="idNome" placeholder="Nome" value="<?=$usuario->nome?>" name="nome" />
+        <?= $this->Form->create($usuario, ['novalidate']); ?>
+          <div class="form-group">            
+            <?=$this->Form->input('nome', ['class'=>'form-control', "placeholder"=>"Nome"])?>
           </div>
           <div class="form-group">
-            <label for="idEmail">E-mail</label>
-            <input type="email" class="form-control" id="idEmail" placeholder="Email" value="<?=$usuario->email?>" name="email" />
+            <?=$this->Form->input('email', ['class'=>'form-control', "placeholder"=>"E-mail"])?>
           </div>
           <div class="form-group">
-            <label for="idSenha">Senha</label>
-            <input type="password" class="form-control" id="idSenha" placeholder="Senha" name="senha" />
+            <?=$this->Form->input('senha', ['class'=>'form-control', "type"=>"password"])?>
           </div>
           <div class="form-group">
-            <label for="idConfSenha">Confirmar senha</label>
-            <input type="password" class="form-control" id="idConfSenha" placeholder="Confirmar senha" name="confSenha" />
+            <?=$this->Form->input('confSenha', ['class'=>'form-control', "type"=>"password"])?>
           </div>
           <div class="checkbox">
             <label>

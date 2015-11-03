@@ -22,7 +22,8 @@ class AcaoController extends AppController
             'conditions'=>[
                 'tarefa_id'=>$tarefa_id,
                 'usuario_id'=>$this->Auth->user('id')
-            ]
+            ],
+            'contain'=>['Usuario', 'Tarefa']
         ];
         $this->set('acao', $this->paginate($this->Acao));
         $this->set('_serialize', ['acao']);
@@ -55,13 +56,12 @@ class AcaoController extends AppController
         if ($this->request->is('post')) {
             $this->request->data['tarefa_id']=$tarefa_id;
             $this->request->data['usuario_id']=$this->Auth->user('id');
-            pr($this->request->data);
             $acao = $this->Acao->patchEntity($acao, $this->request->data);
             if ($this->Acao->save($acao)) {
-                $this->Flash->success('The acao has been saved.');
+                $this->Flash->success(__('The acao has been saved.'));
                 return $this->redirect(['action' => 'index', $tarefa_id]);
             } else {
-                $this->Flash->error('The acao could not be saved. Please, try again.');
+                $this->Flash->error(__('The acao could not be saved. Please, try again.'));
             }
         }
         $this->set(compact('acao', 'tarefa_id'));
@@ -83,10 +83,10 @@ class AcaoController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $acao = $this->Acao->patchEntity($acao, $this->request->data);
             if ($this->Acao->save($acao)) {
-                $this->Flash->success('The acao has been saved.');
-                return $this->redirect(['action' => 'index']);
+                $this->Flash->success(__('The acao has been saved.'));
+                return $this->redirect(['action' => 'index', $acao->tarefa_id]);
             } else {
-                $this->Flash->error('The acao could not be saved. Please, try again.');
+                $this->Flash->error(__('The acao could not be saved. Please, try again.'));
             }
         }
         $this->set(compact('acao'));
@@ -105,9 +105,9 @@ class AcaoController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $acao = $this->Acao->get($id);
         if ($this->Acao->delete($acao)) {
-            $this->Flash->success('The acao has been deleted.');
+            $this->Flash->success(__('The acao has been deleted.'));
         } else {
-            $this->Flash->error('The acao could not be deleted. Please, try again.');
+            $this->Flash->error(__('The acao could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
     }

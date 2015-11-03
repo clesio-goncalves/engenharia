@@ -12,7 +12,7 @@
     <?php foreach ($projeto as $projeto): ?>
         <tr>
             <td><?= h($projeto->titulo) ?></td>
-            <td><?=h(date('Y-m-d', strtotime($projeto->previsao)))?></td>            
+            <td><?=h($projeto->previsao)?></td>            
             <td class="actions">
                 <?= $this->Html->link(__('Detalhes'), ['action' => 'view', $projeto->id]) ?>
                 <?= $this->Html->link(__('Colaboradores'), [

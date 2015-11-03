@@ -44,22 +44,40 @@ class ProjetoTable extends Table
             
         $validator
             ->requirePresence('titulo', 'create')
-            ->notEmpty('titulo');
+            ->notEmpty('titulo', 'Error: Titulo obrigatório!')            
+            ->add('titulo', [
+                'length' => [
+                    'rule' => ['minLength', 10],
+                    'message' => 'Error titulo: Minimo de caracteres 10',
+                ]
+            ])
+            ->add('titulo', [
+                'unique' => [
+                    'rule' => 'validateUnique', 
+                    'provider' => 'table',
+                    'message'=>'Error: Titulo ja cadastrado!'
+                ]
+            ]);            
             
         $validator
             ->requirePresence('descricao', 'create')
-            ->notEmpty('descricao');
+            ->notEmpty('descricao', 'Error: Descrição obrigatório!')
+            ->add('descricao', [
+                'length' => [
+                    'rule' => ['minLength', 20],
+                    'message' => 'Error descrição: Minimo de caracteres 20',
+                ]
+            ]);
             
         $validator
             ->add('data', 'valid', ['rule' => 'date'])
-            ->allowEmpty('data');
-            
+            ->allowEmpty('data');            
         $validator
-            ->add('previsao', 'valid', ['rule' => 'date'])
+            ->add('previsao', 'valid', [
+                'rule' => ['date', 'dmy'],
+                'message'=>'Error: Previsão - data inválida'
+            ])
             ->allowEmpty('previsao');
-            
-        $validator
-            ->allowEmpty('status');
 
         return $validator;
     }

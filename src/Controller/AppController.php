@@ -21,6 +21,9 @@ use Cake\Event\Event;
 use Cake\Filesystem\Folder;
 use Cake\Filesystem\File;
 
+use Cake\Database\Type;
+
+
 /**
  * Application Controller
  *
@@ -29,6 +32,11 @@ use Cake\Filesystem\File;
  *
  * @link http://book.cakephp.org/3.0/en/controllers.html#the-app-controller
  */
+
+Type::build('date')
+ ->useLocaleParser()
+ ->setLocaleFormat('dd/MM/yyyy');
+ 
 class AppController extends Controller
 {
 
@@ -37,8 +45,8 @@ class AppController extends Controller
      *
      * Use this method to add common initialization code like loading components.
      *
-     * @return void
-     */
+     * @return void     */
+
     public function initialize()
     {
         $this->loadComponent('Flash');

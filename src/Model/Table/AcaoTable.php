@@ -52,12 +52,12 @@ class AcaoTable extends Table
             ->notEmpty('tipo')
             ->add('role', 'inList', [
                 'rule' => ['inList', ['D', 'P']],
-                'message' => 'Informe um tipo valido'
+                'message' => 'Error: Informe um tipo valido'
             ]);
             
         $validator
-            ->requirePresence('Observacao', 'create')
-            ->notEmpty('Observacao');
+            ->requirePresence('observacao', 'create')
+            ->notEmpty('observacao', 'Error: Observação obrigatório!');
             
 
         return $validator;

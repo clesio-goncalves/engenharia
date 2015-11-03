@@ -57,10 +57,10 @@ class TarefaController extends AppController
         if ($this->request->is('post')) {
             $tarefa = $this->Tarefa->patchEntity($tarefa, $this->request->data);
             if ($this->Tarefa->save($tarefa)) {
-                $this->Flash->success('The tarefa has been saved.');
+                $this->Flash->success(__('The tarefa has been saved.'));
                 return $this->redirect(['action' => 'index', $projeto_id]);
             } else {
-                $this->Flash->error('The tarefa could not be saved. Please, try again.');
+                $this->Flash->error(__('The tarefa could not be saved. Please, try again.'));
             }
         }
         $this->set(compact('tarefa', 'projeto_id'));
@@ -82,10 +82,10 @@ class TarefaController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tarefa = $this->Tarefa->patchEntity($tarefa, $this->request->data);
             if ($this->Tarefa->save($tarefa)) {
-                $this->Flash->success('The tarefa has been saved.');
+                $this->Flash->success(__('The tarefa has been saved.'));
                 return $this->redirect(['action' => 'index', $tarefa->projeto_id]);
             } else {
-                $this->Flash->error('The tarefa could not be saved. Please, try again.');
+                $this->Flash->error(__('The tarefa could not be saved. Please, try again.'));
             }
         }
         $projeto = $this->Tarefa->Projeto->find('list', [
@@ -110,9 +110,9 @@ class TarefaController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $tarefa = $this->Tarefa->get($id);
         if ($this->Tarefa->delete($tarefa)) {
-            $this->Flash->success('The tarefa has been deleted.');
+            $this->Flash->success(__('The tarefa has been deleted.'));
         } else {
-            $this->Flash->error('The tarefa could not be deleted. Please, try again.');
+            $this->Flash->error(__('The tarefa could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
     }
@@ -121,10 +121,10 @@ class TarefaController extends AppController
         $tarefa = $this->Tarefa->get($id);
         $tarefa->status = 'F';
         if ($this->Tarefa->save($tarefa)) {
-            $this->Flash->success('The tarefa has been saved.');
+            $this->Flash->success(__('The tarefa has been saved.'));
             return $this->redirect(['action' => 'index', $tarefa->projeto_id]);
         } else {
-            $this->Flash->error('The tarefa could not be saved. Please, try again.');
+            $this->Flash->error(__('The tarefa could not be saved. Please, try again.'));
         }
     }
 }

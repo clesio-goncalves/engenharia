@@ -13,7 +13,6 @@ class TarefaController extends AppController
 {
 
     public function beforeFilter(Event $event){
-        
         $this->loadModel('ColaboradorProjeto');
         parent::beforeFilter($event);
     }
@@ -71,17 +70,17 @@ class TarefaController extends AppController
             ]);
         $colaborador_proj = $colaborador_proj->first();
         if(!$colaborador_proj->gerente){
-            $this->Flash->error('Acesso negado!.'.$colaborador_proj->gerente);
+            $this->Flash->error(__('Acesso negado!.'.$colaborador_proj->gerente));
             return $this->redirect(['action' => 'index', $projeto_id]);
         }
         $tarefa = $this->Tarefa->newEntity();
         if ($this->request->is('post')) {
             $tarefa = $this->Tarefa->patchEntity($tarefa, $this->request->data);
             if ($this->Tarefa->save($tarefa)) {
-                $this->Flash->success('The tarefa has been saved.');
+                $this->Flash->success(__('The tarefa has been saved.'));
                 return $this->redirect(['action' => 'index', $projeto_id]);
             } else {
-                $this->Flash->error('The tarefa could not be saved. Please, try again.');
+                $this->Flash->error(__('The tarefa could not be saved. Please, try again.'));
             }
         }
         $this->set(compact('tarefa', 'projeto_id'));
@@ -96,16 +95,16 @@ class TarefaController extends AppController
             
 
         if(!$colaborador_proj->gerente){
-            $this->Flash->error('Acesso negado!.'.$colaborador_proj->gerente);
+            $this->Flash->error(__('Acesso negado!.'.$colaborador_proj->gerente));
             return $this->redirect(['action' => 'index', $tarefa->projeto_id]);
         }
 
         $tarefa->status = 'F';
         if ($this->Tarefa->save($tarefa)) {
-            $this->Flash->success('The tarefa has been saved.');
+            $this->Flash->success(__('The tarefa has been saved.'));
             return $this->redirect(['action' => 'index', $tarefa->projeto_id]);
         } else {
-            $this->Flash->error('The tarefa could not be saved. Please, try again.');
+            $this->Flash->error(__('The tarefa could not be saved. Please, try again.'));
         }
     }
 

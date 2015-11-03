@@ -1,0 +1,525 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-10-29 18:52+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/AcaoController.php:61;86
+#: Controller/Admin/AcaoController.php:61;86
+msgid "The acao has been saved."
+msgstr "A ação foi salva"
+
+#: Controller/AcaoController.php:64;89
+#: Controller/Admin/AcaoController.php:64;89
+msgid "The acao could not be saved. Please, try again."
+msgstr "A ação não pode ser salva. Tente novamente."
+
+#: Controller/AcaoController.php:108
+#: Controller/Admin/AcaoController.php:108
+msgid "The acao has been deleted."
+msgstr "A ação foi deletada"
+
+#: Controller/AcaoController.php:110
+#: Controller/Admin/AcaoController.php:110
+msgid "The acao could not be deleted. Please, try again."
+msgstr "A ação não pode ser deletada. Tente novamente."
+
+#: Controller/ColaboradorProjetoController.php:69;96
+#: Controller/Admin/ColaboradorProjetoController.php:78;105
+msgid "The colaborador projeto has been saved."
+msgstr "O colaborador do projeto foi salvo."
+
+#: Controller/ColaboradorProjetoController.php:72;99
+#: Controller/Admin/ColaboradorProjetoController.php:81;108
+msgid "The colaborador projeto could not be saved. Please, try again."
+msgstr "O colaborador do projeto nao pode ser salvo. Tente novamente."
+
+#: Controller/ColaboradorProjetoController.php:120
+#: Controller/Admin/ColaboradorProjetoController.php:129
+msgid "The colaborador projeto has been deleted."
+msgstr "O colaborador do projeto foi deletado."
+
+#: Controller/ColaboradorProjetoController.php:122
+#: Controller/Admin/ColaboradorProjetoController.php:131
+msgid "The colaborador projeto could not be deleted. Please, try again."
+msgstr "O colaborador do projeto nao pode ser deletado. Tente novamente."
+
+#: Controller/TarefaController.php:73;98
+msgid "Acesso negado!."
+msgstr ""
+
+#: Controller/TarefaController.php:80;104
+#: Controller/Admin/TarefaController.php:60;85;124
+msgid "The tarefa has been saved."
+msgstr "A tarefa foi salva."
+
+#: Controller/TarefaController.php:83;107
+#: Controller/Admin/TarefaController.php:63;88;127
+msgid "The tarefa could not be saved. Please, try again."
+msgstr "A tarefa não pode ser salva. Tente novamente."
+
+#: Controller/UsuarioController.php:59
+msgid "Invalid username or password, try again"
+msgstr "E-mail ou senha inválidos, tente novamente!"
+
+#: Controller/Admin/ProjetoController.php:60;87;1211
+msgid "The projeto has been saved."
+msgstr "O projeto foi salvo."
+
+#: Controller/Admin/ProjetoController.php:63;90;124
+msgid "The projeto could not be saved. Please, try again."
+msgstr "O projeto não pode ser salvo. Tente novamente."
+
+#: Controller/Admin/ProjetoController.php:81
+msgid "Projeto ja finalizado, não pode ser alterado."
+msgstr ""
+
+#: Controller/Admin/ProjetoController.php:110
+msgid "The projeto has been deleted."
+msgstr "O projeto foi deletado."
+
+#: Controller/Admin/ProjetoController.php:112
+msgid "The projeto could not be deleted. Please, try again."
+msgstr "O projeto não pode ser deletado. Tente novamente"
+
+#: Controller/Admin/ProjetoController.php:165
+msgid "Nenhum colaborador cadastrado para esse projeto."
+msgstr ""
+
+#: Controller/Admin/ProjetoController.php:171
+msgid "Mensagem enviado, aguarde nosso retorno."
+msgstr "Mensagem enviada, aguarde nosso retorno."
+
+#: Controller/Admin/ProjetoController.php:174
+msgid "Ocorreu um problema ao enviar sua mensagem."
+msgstr ""
+
+#: Controller/Admin/TarefaController.php:113
+msgid "The tarefa has been deleted."
+msgstr "A tarefa foi deletada"
+
+#: Controller/Admin/TarefaController.php:115
+msgid "The tarefa could not be deleted. Please, try again."
+msgstr "a tarefa não pode ser deletada. Tente novamente."
+
+#: Controller/Admin/UsuarioController.php:75;100
+msgid "The usuario has been saved."
+msgstr "O usuario foi salvo"
+
+#: Controller/Admin/UsuarioController.php:78;103
+msgid "The usuario could not be saved. Please, try again."
+msgstr "O usuario não pode ser salvo. Tente novamente."
+
+#: Controller/Admin/UsuarioController.php:122
+msgid "The usuario has been deleted."
+msgstr "O usuario foi deletado"
+
+#: Controller/Admin/UsuarioController.php:124
+msgid "The usuario could not be deleted. Please, try again."
+msgstr "O usuario nao pode ser deletado. Tente novamente."
+
+#: Template/Acao/edit.ctp:2
+#: Template/Acao/index.ctp:8
+#: Template/Acao/view.ctp:2
+#: Template/Admin/Acao/edit.ctp:2
+#: Template/Admin/Acao/index.ctp:2;16
+#: Template/Admin/Acao/ver_acoes.ctp:8
+#: Template/Admin/ColaboradorProjeto/add.ctp:2
+#: Template/Admin/ColaboradorProjeto/edit.ctp:2
+#: Template/Admin/ColaboradorProjeto/index.ctp:41
+#: Template/Admin/ColaboradorProjeto/view.ctp:2
+#: Template/Admin/Projeto/finalizados.ctp:8
+#: Template/Admin/Projeto/index.ctp:8
+#: Template/Admin/Projeto/manager.ctp:8
+#: Template/Admin/Projeto/view.ctp:42
+#: Template/Admin/Tarefa/index.ctp:8
+#: Template/Admin/Usuario/index.ctp:10
+#: Template/Admin/Usuario/view.ctp:30
+#: Template/ColaboradorProjeto/add.ctp:2
+#: Template/ColaboradorProjeto/edit.ctp:2
+#: Template/ColaboradorProjeto/view.ctp:2
+#: Template/Projeto/index.ctp:8
+#: Template/Projeto/view.ctp:33
+#: Template/Tarefa/index.ctp:8
+#: Template/Usuario/index.ctp:10
+#: Template/Usuario/view.ctp:2;45
+msgid "Actions"
+msgstr ""
+
+#: Template/Acao/edit.ctp:5
+#: Template/Admin/Acao/edit.ctp:5
+#: Template/Admin/Acao/index.ctp:30
+#: Template/Admin/ColaboradorProjeto/edit.ctp:5
+#: Template/ColaboradorProjeto/edit.ctp:5
+#: Template/Usuario/view.ctp:59
+msgid "Delete"
+msgstr ""
+
+#: Template/Acao/edit.ctp:7
+#: Template/Acao/view.ctp:5
+#: Template/Admin/Acao/edit.ctp:7
+#: Template/Admin/Acao/index.ctp:30
+#: Template/Admin/ColaboradorProjeto/edit.ctp:7
+#: Template/Admin/ColaboradorProjeto/view.ctp:5
+#: Template/ColaboradorProjeto/edit.ctp:7
+#: Template/ColaboradorProjeto/view.ctp:5
+#: Template/Usuario/view.ctp:5;59
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Acao/edit.ctp:10
+#: Template/Acao/view.ctp:6
+#: Template/Admin/Acao/edit.ctp:10
+msgid "List Acao"
+msgstr ""
+
+#: Template/Acao/edit.ctp:16
+#: Template/Acao/view.ctp:4
+#: Template/Admin/Acao/edit.ctp:16
+msgid "Edit Acao"
+msgstr ""
+
+#: Template/Acao/edit.ctp:25
+#: Template/Admin/Acao/edit.ctp:25
+#: Template/Admin/ColaboradorProjeto/add.ctp:20
+#: Template/Admin/ColaboradorProjeto/edit.ctp:26
+#: Template/ColaboradorProjeto/add.ctp:20
+#: Template/ColaboradorProjeto/edit.ctp:26
+msgid "Submit"
+msgstr ""
+
+#: Template/Acao/index.ctp:17
+#: Template/Admin/Acao/ver_acoes.ctp:17
+#: Template/Admin/Projeto/finalizados.ctp:17
+#: Template/Admin/Projeto/index.ctp:17
+#: Template/Admin/Projeto/manager.ctp:17
+#: Template/Admin/Tarefa/index.ctp:17
+#: Template/Admin/Usuario/index.ctp:21
+#: Template/Projeto/index.ctp:17
+#: Template/Tarefa/index.ctp:17
+#: Template/Usuario/index.ctp:21
+msgid "Detalhes"
+msgstr ""
+
+#: Template/Acao/index.ctp:26
+#: Template/Admin/Acao/index.ctp:39
+#: Template/Admin/Acao/ver_acoes.ctp:26
+#: Template/Admin/ColaboradorProjeto/index.ctp:25;61
+#: Template/Admin/Projeto/finalizados.ctp:26
+#: Template/Admin/Projeto/index.ctp:40
+#: Template/Admin/Projeto/manager.ctp:30
+#: Template/Admin/Tarefa/index.ctp:28
+#: Template/Admin/Usuario/index.ctp:30
+#: Template/ColaboradorProjeto/index.ctp:25
+#: Template/Projeto/index.ctp:35
+#: Template/Tarefa/index.ctp:30
+#: Template/Usuario/index.ctp:30
+msgid "previous"
+msgstr ""
+
+#: Template/Acao/index.ctp:28
+#: Template/Admin/Acao/index.ctp:41
+#: Template/Admin/Acao/ver_acoes.ctp:28
+#: Template/Admin/ColaboradorProjeto/index.ctp:27;63
+#: Template/Admin/Projeto/finalizados.ctp:28
+#: Template/Admin/Projeto/index.ctp:42
+#: Template/Admin/Projeto/manager.ctp:32
+#: Template/Admin/Tarefa/index.ctp:30
+#: Template/Admin/Usuario/index.ctp:32
+#: Template/ColaboradorProjeto/index.ctp:27
+#: Template/Projeto/index.ctp:37
+#: Template/Tarefa/index.ctp:32
+#: Template/Usuario/index.ctp:32
+msgid "next"
+msgstr "proximo"
+
+#: Template/Acao/view.ctp:5
+msgid "Delete Acao"
+msgstr "Excluir ação"
+
+#: Template/Acao/view.ctp:7
+#: Template/Admin/Acao/index.ctp:4
+msgid "New Acao"
+msgstr "Nova Ação"
+
+#: Template/Acao/view.ctp:14
+msgid "Tipo"
+msgstr ""
+
+#: Template/Acao/view.ctp:18
+#: Template/Usuario/view.ctp:26
+msgid "Id"
+msgstr ""
+
+#: Template/Acao/view.ctp:20
+msgid "Tarefa Id"
+msgstr ""
+
+#: Template/Acao/view.ctp:22
+#: Template/Usuario/view.ctp:42
+msgid "Usuario Id"
+msgstr ""
+
+#: Template/Acao/view.ctp:26
+#: Template/Admin/Projeto/view.ctp:40
+#: Template/Projeto/view.ctp:31
+msgid "Data"
+msgstr ""
+
+#: Template/Acao/view.ctp:32
+msgid "Observacao"
+msgstr "Observação"
+
+#: Template/Admin/Acao/index.ctp:28
+#: Template/Admin/Projeto/view.ctp:52
+#: Template/Projeto/view.ctp:43
+#: Template/Usuario/view.ctp:55
+msgid "View"
+msgstr "Visão"
+
+#: Template/Admin/Acao/index.ctp:29
+#: Template/Usuario/view.ctp:57
+msgid "Edit"
+msgstr "Editar"
+
+#: Template/Admin/ColaboradorProjeto/add.ctp:4
+#: Template/Admin/ColaboradorProjeto/edit.ctp:10
+#: Template/Admin/ColaboradorProjeto/view.ctp:6
+#: Template/ColaboradorProjeto/add.ctp:4
+#: Template/ColaboradorProjeto/edit.ctp:10
+#: Template/ColaboradorProjeto/view.ctp:6
+#: Template/Usuario/view.ctp:8
+msgid "List Colaborador Projeto"
+msgstr "Lista Colaboradores do Projeto"
+
+#: Template/Admin/ColaboradorProjeto/add.ctp:5
+#: Template/Admin/ColaboradorProjeto/edit.ctp:11
+#: Template/Admin/ColaboradorProjeto/view.ctp:8
+#: Template/ColaboradorProjeto/add.ctp:5
+#: Template/ColaboradorProjeto/edit.ctp:11
+#: Template/ColaboradorProjeto/view.ctp:8
+msgid "List Projeto"
+msgstr "Lista Projeto"
+
+#: Template/Admin/ColaboradorProjeto/add.ctp:6
+#: Template/Admin/ColaboradorProjeto/edit.ctp:12
+#: Template/Admin/ColaboradorProjeto/view.ctp:9
+#: Template/ColaboradorProjeto/add.ctp:6
+#: Template/ColaboradorProjeto/edit.ctp:12
+#: Template/ColaboradorProjeto/view.ctp:9
+msgid "New Projeto"
+msgstr "Novo Projeto"
+
+#: Template/Admin/ColaboradorProjeto/add.ctp:7
+#: Template/Admin/ColaboradorProjeto/edit.ctp:13
+#: Template/Admin/ColaboradorProjeto/view.ctp:10
+#: Template/ColaboradorProjeto/add.ctp:7
+#: Template/ColaboradorProjeto/edit.ctp:13
+#: Template/ColaboradorProjeto/view.ctp:10
+#: Template/Usuario/view.ctp:6
+msgid "List Usuario"
+msgstr "Lista Usuarios"
+
+#: Template/Admin/ColaboradorProjeto/add.ctp:8
+#: Template/Admin/ColaboradorProjeto/edit.ctp:14
+#: Template/Admin/ColaboradorProjeto/view.ctp:11
+#: Template/ColaboradorProjeto/add.ctp:8
+#: Template/ColaboradorProjeto/edit.ctp:14
+#: Template/ColaboradorProjeto/view.ctp:11
+#: Template/Usuario/view.ctp:7
+msgid "New Usuario"
+msgstr "Novo Usuario"
+
+#: Template/Admin/ColaboradorProjeto/add.ctp:14
+#: Template/ColaboradorProjeto/add.ctp:14
+msgid "Add Colaborador Projeto"
+msgstr "Adicionar Colaborador ao Projeto"
+
+#: Template/Admin/ColaboradorProjeto/edit.ctp:20
+#: Template/Admin/ColaboradorProjeto/view.ctp:4
+#: Template/ColaboradorProjeto/edit.ctp:20
+#: Template/ColaboradorProjeto/view.ctp:4
+msgid "Edit Colaborador Projeto"
+msgstr "Editar Colaborador do Projeto"
+
+#: Template/Admin/ColaboradorProjeto/index.ctp:50
+msgid "Adicionar"
+msgstr ""
+
+#: Template/Admin/ColaboradorProjeto/index.ctp:50;51
+msgid "Confirmar usuario # {0}?"
+msgstr ""
+
+#: Template/Admin/ColaboradorProjeto/index.ctp:51
+#: Template/Admin/ColaboradorProjeto/view.ctp:24
+#: Template/Admin/Usuario/view.ctp:29
+#: Template/ColaboradorProjeto/view.ctp:24
+#: Template/Usuario/view.ctp:43
+msgid "Gerente"
+msgstr ""
+
+#: Template/Admin/ColaboradorProjeto/view.ctp:5
+#: Template/ColaboradorProjeto/view.ctp:5
+msgid "Delete Colaborador Projeto"
+msgstr "Deletar Colaborador do Projeto"
+
+#: Template/Admin/ColaboradorProjeto/view.ctp:7
+#: Template/ColaboradorProjeto/view.ctp:7
+#: Template/Usuario/view.ctp:9
+msgid "New Colaborador Projeto"
+msgstr "Novo Colaborador do Projeto"
+
+#: Template/Admin/ColaboradorProjeto/view.ctp:18
+#: Template/ColaboradorProjeto/view.ctp:18
+msgid "Projeto"
+msgstr ""
+
+#: Template/Admin/ColaboradorProjeto/view.ctp:20
+#: Template/ColaboradorProjeto/view.ctp:20
+msgid "Usuario"
+msgstr ""
+
+#: Template/Admin/ColaboradorProjeto/view.ctp:25;27
+#: Template/ColaboradorProjeto/view.ctp:25;27
+#: Template/Usuario/view.ctp:31
+msgid "Yes"
+msgstr "Sim"
+
+#: Template/Admin/ColaboradorProjeto/view.ctp:25;27
+#: Template/ColaboradorProjeto/view.ctp:25;27
+#: Template/Usuario/view.ctp:31
+msgid "No"
+msgstr "Não"
+
+#: Template/Admin/ColaboradorProjeto/view.ctp:26
+#: Template/ColaboradorProjeto/view.ctp:26
+#: Template/Usuario/view.ctp:44
+msgid "Ativo"
+msgstr ""
+
+#: Template/Admin/Projeto/index.ctp:18
+#: Template/Projeto/index.ctp:18
+msgid "Colaboradores"
+msgstr ""
+
+#: Template/Admin/Projeto/index.ctp:22
+#: Template/Projeto/index.ctp:22
+msgid "Tarefas"
+msgstr ""
+
+#: Template/Admin/Projeto/index.ctp:26
+#: Template/Admin/Tarefa/index.ctp:19
+#: Template/Tarefa/index.ctp:20
+msgid "Finalizar"
+msgstr ""
+
+#: Template/Admin/Projeto/index.ctp:26
+msgid "Deseja finalizar o projeto # {0}?"
+msgstr ""
+
+#: Template/Admin/Projeto/index.ctp:27
+msgid "Notificar"
+msgstr ""
+
+#: Template/Admin/Projeto/manager.ctp:18
+msgid "Tarefa"
+msgstr ""
+
+#: Template/Admin/Projeto/view.ctp:35
+#: Template/Projeto/view.ctp:26
+msgid "Tarefas relacionadas"
+msgstr ""
+
+#: Template/Admin/Projeto/view.ctp:39
+#: Template/Admin/Usuario/view.ctp:28
+#: Template/Projeto/view.ctp:30
+msgid "Titulo"
+msgstr ""
+
+#: Template/Admin/Projeto/view.ctp:41
+#: Template/Projeto/view.ctp:32
+msgid "Situacao"
+msgstr "Situação"
+
+#: Template/Admin/Projeto/view.ctp:53
+#: Template/Projeto/view.ctp:44
+msgid "Ação"
+msgstr ""
+
+#: Template/Admin/Tarefa/index.ctp:18
+#: Template/Tarefa/index.ctp:18
+msgid "ação"
+msgstr ""
+
+#: Template/Admin/Tarefa/index.ctp:19
+#: Template/Tarefa/index.ctp:20
+msgid "Deseja finalizar a tarefa # {0}?"
+msgstr ""
+
+#: Template/Admin/Usuario/view.ctp:24
+msgid "Projetos em andamento"
+msgstr ""
+
+#: Template/Tarefa/index.ctp:34
+msgid "Nova"
+msgstr ""
+
+#: Template/Usuario/view.ctp:4
+msgid "Edit Usuario"
+msgstr "Editar Usuario"
+
+#: Template/Usuario/view.ctp:5
+msgid "Delete Usuario"
+msgstr "Deletar Usuario"
+
+#: Template/Usuario/view.ctp:16
+msgid "Nome"
+msgstr ""
+
+#: Template/Usuario/view.ctp:18
+msgid "Email"
+msgstr "E-mail"
+
+#: Template/Usuario/view.ctp:20
+msgid "Senha"
+msgstr ""
+
+#: Template/Usuario/view.ctp:22
+msgid "Status"
+msgstr ""
+
+#: Template/Usuario/view.ctp:30
+msgid "Admin"
+msgstr ""
+
+#: Template/Usuario/view.ctp:37
+msgid "Related ColaboradorProjeto"
+msgstr "Colaboradores do projeto relacionados"
+
+#: Template/Usuario/view.ctp:41
+msgid "Projeto Id"
+msgstr ""
+
+#: Template/Error/error400.ctp:33
+#: Template/Error/error500.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Error/error400.ctp:35
+msgid "The requested address %s was not found on this server."
+msgstr "A requisição ao endereço %s não foi encontrada no servidor"
+
+#: Template/Error/error500.ctp:33
+msgid "An Internal Error Has Occurred"
+msgstr "Ocorreu um erro interno"
+

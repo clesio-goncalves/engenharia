@@ -16,7 +16,7 @@ class Acao extends Entity
      */
     protected $_accessible = [
         'tipo' => true,
-        'Observacao' => true,
+        'observacao' => true,
         'data' => true,
         'tarefa_id' => true,
         'usuario_id' => true,

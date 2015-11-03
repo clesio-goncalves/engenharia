@@ -75,10 +75,10 @@ class ColaboradorProjetoController extends AppController
             $colaboradorProjeto->gerente = $gerente;
             $colaboradorProjeto->ativo = true;
             if ($this->ColaboradorProjeto->save($colaboradorProjeto)) {
-                $this->Flash->success('The colaborador projeto has been saved.');
+                $this->Flash->success(__('The colaborador projeto has been saved.'));
                 return $this->redirect(['action' => 'index', $projeto_id]);
             } else {
-                $this->Flash->error('The colaborador projeto could not be saved. Please, try again.');
+                $this->Flash->error(__('The colaborador projeto could not be saved. Please, try again.'));
             }
         }
         $projeto = $this->ColaboradorProjeto->Projeto->find('list', ['limit' => 200]);
@@ -102,10 +102,10 @@ class ColaboradorProjetoController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $colaboradorProjeto = $this->ColaboradorProjeto->patchEntity($colaboradorProjeto, $this->request->data);
             if ($this->ColaboradorProjeto->save($colaboradorProjeto)) {
-                $this->Flash->success('The colaborador projeto has been saved.');
+                $this->Flash->success(__('The colaborador projeto has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error('The colaborador projeto could not be saved. Please, try again.');
+                $this->Flash->error(__('The colaborador projeto could not be saved. Please, try again.'));
             }
         }
         $projeto = $this->ColaboradorProjeto->Projeto->find('list', ['limit' => 200]);
@@ -126,9 +126,9 @@ class ColaboradorProjetoController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $colaboradorProjeto = $this->ColaboradorProjeto->get($id);
         if ($this->ColaboradorProjeto->delete($colaboradorProjeto)) {
-            $this->Flash->success('The colaborador projeto has been deleted.');
+            $this->Flash->success(__('The colaborador projeto has been deleted.'));
         } else {
-            $this->Flash->error('The colaborador projeto could not be deleted. Please, try again.');
+            $this->Flash->error(__('The colaborador projeto could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
     }
